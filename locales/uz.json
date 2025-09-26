@@ -1,0 +1,128 @@
+{
+  "meta": { "title": "iBOS Academy" },
+  "spinner": { "loading": "Yuklanmoqda..." },
+  "logo": { "alt": "iBOS logotipi" },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "courses": "Kurslar",
+    "pages": "Sahifalar",
+    "team": "Jamoamiz",
+    "testimonial": "Sharhlar",
+    "error": "404 Sahifa",
+    "contact": "Aloqa",
+    "join": "Hozir qo'shiling"
+  },
+  "carousel": {
+    "sub": "Eng yaxshi onlayn kurslar",
+    "title": "Eng yaxshi onlayn ta'lim platformasi",
+    "title2": "Uyda o‘qib bilim ol",
+    "text": "Mazmunli matn — sahifa namunasi.",
+    "text2": "Mazmunli matn — sahifa namunasi.",
+    "read": "Batafsil",
+    "join": "Qo‘shilish",
+    "img1": { "alt": "Karusel rasm 1" },
+    "img2": { "alt": "Karusel rasm 2" }
+  },
+  "service": {
+    "instructors": "Malakali o‘qituvchilar",
+    "instructors_desc": "Qisqacha ta'rif — sayt namunasi.",
+
+    "online": "Onlayn darslar",
+    "online_desc": "Qisqacha ta'rif — sayt namunasi.",
+
+    "projects": "Uy vazifalari",
+    "projects_desc": "Qisqacha ta'rif — sayt namunasi.",
+
+    "library": "Kitobxonlik kutubxonasi",
+    "library_desc": "Qisqacha ta'rif — sayt namunasi."
+  },
+  "about": {
+    "subtitle": "Biz haqimizda",
+    "title": "iBOS ga xush kelibsiz",
+    "text1": "Biz haqimizda qisqacha ma'lumot.",
+    "text2": "Qo‘shimcha ma'lumotlar va tavsiflar shu yerda.",
+    "points": [
+      "Malakali o‘qituvchilar",
+      "Onlayn darslar",
+      "Xalqaro sertifikat",
+      "Malakali o‘qituvchilar",
+      "Onlayn darslar",
+      "Xalqaro sertifikat"
+    ],
+    "button": "Batafsil",
+    "img": { "alt": "Biz haqimizda rasm" }
+  },
+  "categories": {
+    "subtitle": "Kategoriyalar",
+    "title": "Kurslar kategoriyalari"
+  },
+  "cat": {
+    "web": { "title": "Veb Dizayn", "img": { "alt": "Veb Dizayn" } },
+    "graphic": { "title": "Grafik Dizayn", "img": { "alt": "Grafik Dizayn" } },
+    "video": { "title": "Video Montaj", "img": { "alt": "Video Montaj" } },
+    "marketing": {
+      "title": "Onlayn Marketing",
+      "img": { "alt": "Onlayn Marketing" }
+    },
+    "courses_count": "49 ta kurs"
+  },
+  "courses": { "subtitle": "Kurslar", "title": "Mashhur kurslar" },
+  "course": {
+    "read": "Batafsil",
+    "join": "Qo‘shilish",
+    "price": "$149.00",
+    "title": "Boshlovchilar uchun Veb Dizayn kursi",
+    "instructor": "John Doe",
+    "duration": "1.49 Soat",
+    "students": "30 Talaba",
+    "img": { "alt": "Kurs rasm" }
+  },
+  "team": {
+    "subtitle": "O‘qituvchilar",
+    "title": "Tajribali o‘qituvchilar",
+    "member1": {
+      "name": "O‘qituvchi",
+      "title": "Lavozim",
+      "img": { "alt": "O‘qituvchi rasmi" }
+    }
+  },
+  "testimonial": {
+    "subtitle": "Sharhlar",
+    "title": "Talabalarimiz nima deyishadi!",
+    "person1": {
+      "name": "Mijoz",
+      "prof": "Kasb",
+      "text": "Mijoz fikri — namunaviy matn.",
+      "img": { "alt": "Mijoz rasmi" }
+    }
+  },
+  "footer": {
+    "links_title": "Tezkor linklar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Shartlar va qoidalar",
+    "faq": "FAQ & Yordam",
+    "contact_title": "Aloqa",
+    "gallery": "Galereya",
+    "news_title": "Yangiliklar",
+    "news_text": "Yangiliklarga obuna bo‘ling.",
+    "news_placeholder": "Sizning email",
+    "news_button": "Obuna bo‘lish",
+    "copy": "© iBOS.uz, Barcha huquqlar himoyalangan.",
+    "designed": "Dizayn: HTML Codex",
+    "distributed": "Tarqatish: ThemeWagon",
+    "menu": {
+      "home": "Bosh sahifa",
+      "cookies": "Cookies",
+      "help": "Yordam",
+      "faq": "FAQ"
+    }
+  },
+  "contact": {
+    "address": "123 Street, New York, USA",
+    "phone": "+012 345 67890",
+    "email": "info@example.com"
+  }
+}
