@@ -34,7 +34,7 @@
     "projects": "Home Projects",
     "projects_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor.",
     
-    "library": "Book Library",
+    "library": "Coworking Space",
     "library_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor."
   },
   "about": {
@@ -45,17 +45,19 @@
     "points": [
       "Skilled Instructors",
       "Online Classes",
-      "International Certificate",
-      "Skilled Instructors",
-      "Online Classes",
-      "International Certificate"
+      "Home Projects",
+      "Coworking Space",
+      "R&D Laboratory",
+      "Material Base"
     ],
     "button": "Read More",
     "img": { "alt": "About image" }
   },
   "categories": {
     "subtitle": "Categories",
-    "title": "Courses Categories"
+    "title": "Courses Categories",
+    "web_design": "Web Design",
+    "graphic_design": "Graphic Design"
   },
   "cat": {
     "web": { "title": "Web Design", "img": { "alt": "Web Design" } },
@@ -98,10 +100,10 @@
     "news_text": "Dolor amet sit justo amet elitr clita ipsum elitr est.",
     "news_placeholder": "Your email",
     "news_button": "SignUp",
-    "copy": "© iBOS.uz, All Right Reserved.",
+    "copy": "All Right Reserved.",
     "designed": "Designed By HTML Codex",
     "distributed": "Distributed By ThemeWagon",
-    "menu": { "home": "Home", "cookies": "Cookies", "help": "Help", "faq": "FQAs" }
-  },
-  "contact": { "address": "123 Street, New York, USA", "phone": "+012 345 67890", "email": "info@example.com" }
+    "menu": { "home": "Home", "cookies": "Cookies", "help": "Help", "faq": "FQAs" },
+    "address": "Mashrab Street, Andijan, Uzbekistan"
+  }
 }

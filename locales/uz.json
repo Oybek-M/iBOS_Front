@@ -34,7 +34,7 @@
     "projects": "Uy vazifalari",
     "projects_desc": "Qisqacha ta'rif — sayt namunasi.",
 
-    "library": "Kitobxonlik kutubxonasi",
+    "library": "Coworking hududi",
     "library_desc": "Qisqacha ta'rif — sayt namunasi."
   },
   "about": {
@@ -45,17 +45,17 @@
     "points": [
       "Malakali o‘qituvchilar",
       "Onlayn darslar",
-      "Xalqaro sertifikat",
-      "Malakali o‘qituvchilar",
-      "Onlayn darslar",
-      "Xalqaro sertifikat"
+      "Uy vazifalari",
+      "Coworking hududi",
+      "R&D laboratoriyasi",
+      "Material ombori"
     ],
     "button": "Batafsil",
     "img": { "alt": "Biz haqimizda rasm" }
   },
   "categories": {
     "subtitle": "Kategoriyalar",
-    "title": "Kurslar kategoriyalari"
+    "title": "Kurs kategoriyalari"
   },
   "cat": {
     "web": { "title": "Veb Dizayn", "img": { "alt": "Veb Dizayn" } },
@@ -110,7 +110,7 @@
     "news_text": "Yangiliklarga obuna bo‘ling.",
     "news_placeholder": "Sizning email",
     "news_button": "Obuna bo‘lish",
-    "copy": "© iBOS.uz, Barcha huquqlar himoyalangan.",
+    "copy": "Barcha huquqlar himoyalangan.",
     "designed": "Dizayn: HTML Codex",
     "distributed": "Tarqatish: ThemeWagon",
     "menu": {
@@ -118,11 +118,7 @@
       "cookies": "Cookies",
       "help": "Yordam",
       "faq": "FAQ"
-    }
-  },
-  "contact": {
-    "address": "123 Street, New York, USA",
-    "phone": "+012 345 67890",
-    "email": "info@example.com"
+    },
+    "address": "Mashrab ko'chasi, Andijon, O'zbekiston"
   }
 }
