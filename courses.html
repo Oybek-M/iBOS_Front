@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
+    <title>iBOS Academy</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_icon.png" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -42,29 +42,40 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" style="top: 0px;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+            <img src="img/logo.png" alt="Logo" width="150" height="54" data-i18n-alt="logo.alt" />
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link active">Courses</a>
-                <div class="nav-item dropdown">
+                <select id="lang-select" class="form-select form-select-sm w-auto ms-3" aria-label="Language select">
+                    <option value="uz">Oʻzbekcha</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+
+                <a href="index.html" class="nav-item nav-link" data-i18n-html="nav.home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-i18n-html="nav.about">About</a>
+                <a href="courses.html" class="nav-item nav-link active" data-i18n-html="nav.courses">Courses</a>
+
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <a href="team.html" class="nav-item nav-link" data-i18n-html="nav.team">Our Team</a>
+                <a href="contact.html" class="nav-item nav-link" data-i18n-html="nav.contact">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+                Join Now
+                <i class="fa fa-arrow-right ms-3"></i>
+            </a> -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -94,49 +105,83 @@
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Courses Categories</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3" data-i18n="categories.subtitle">
+                    Categories
+                </h6>
+                <h1 class="mb-5" data-i18n="categories.title">Courses Categories</h1>
             </div>
-            <div class="row g-3">
+            <div class="row g-3 mb-3">
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Web Design</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px">
+                                    <h5 class="m-0">Programming</h5>
+                                    <small class="text-primary">3 Courses</small>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Graphic Design</h5>
-                                    <small class="text-primary">49 Courses</small>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px">
+                                    <h5 class="m-0">Artificial Intelligence</h5>
+                                    <small class="text-primary">2 Courses</small>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">Online Marketing</h5>
-                            <small class="text-primary">49 Courses</small>
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt=""
+                            style="object-fit: cover" />
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin: 1px">
+                            <h5 class="m-0">Robotics</h5>
+                            <small class="text-primary">3 Courses</small>
                         </div>
                     </a>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt=""
+                            style="object-fit: cover" />
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin: 1px">
+                            <h5 class="m-0">3D Modeling</h5>
+                            <small class="text-primary">3 Courses</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px">
+                                    <h5 class="m-0">Hardware Engineering</h5>
+                                    <small class="text-primary">1 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px">
+                                    <h5 class="m-0">Languages</h5>
+                                    <small class="text-primary">1 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,221 +193,334 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3" data-i18n="courses.subtitle">
+                    Courses
+                </h6>
+                <h1 class="mb-5" data-i18n="courses.title">Popular Courses</h1>
             </div>
             <div class="row g-4 justify-content-center">
+                <!-- Programming - Start -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid" src="img/course-1.jpg" alt="" />
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    <!-- <a href="courses.html"
+                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px"
+                                        data-i18n-html="course.read"
+                                        >
+                                        Read More
+                                    </a> -->
+                                <a href="contact.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 30px"
+                                    data-i18n-html="course.join"
+                                    >
+                                    Join Now
+                                </a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
+                            <!-- <h3 class="mb-0">$49.44</h3> -->
+                            <!-- <div class="mb-3">
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                                <small>(17)</small>
+                            </div> -->
+                            <h5 class="mb-4">
+                                Programming <br>
+                                Foundation | Python | DevOps
+                            </h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-user-tie text-primary me-2"></i>
+                                Muxtoraliyev Oybek
+                            </small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-clock text-primary me-2"></i>
+                                3 | 10 | 8 <span data-i18n-html="course.month">Month</span>
+                            </small>
+                            <!-- <small class="flex-fill text-center py-2">
+                                <i class="fa fa-user text-primary me-2"></i>
+                                18 Students
+                            </small> -->
                         </div>
                     </div>
                 </div>
+                <!-- Programming - End -->
+                <!-- AI - Start -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-1.jpg" alt="" />
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                    <!-- <a href="courses.html"
+                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px"
+                                        data-i18n-html="course.read"
+                                        >
+                                        Read More
+                                    </a> -->
+                                <a href="contact.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 30px"
+                                    data-i18n-html="course.join"
+                                    >
+                                    Join Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <!-- <h3 class="mb-0">$49.44</h3> -->
+                            <!-- <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(17)</small>
+                            </div> -->
+                            <h5 class="mb-4">
+                                Artificial Intelligence <br>
+                                LLM AI Agente | Prompt Engineering
+                            </h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-user-tie text-primary me-2"></i>
+                                Qayumov Maxmudjon
+                            </small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-clock text-primary me-2"></i>
+                                7 | 3 <span data-i18n-html="course.month">Month</span>
+                            </small>
+                            <!-- <small class="flex-fill text-center py-2">
+                                <i class="fa fa-user text-primary me-2"></i>
+                                18 Students
+                            </small> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- AI - End -->
+                <!-- Robotics - Start -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid" src="img/course-2.jpg" alt="" />
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    <!-- <a href="courses.html"
+                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px"
+                                        data-i18n-html="course.read"
+                                        >
+                                        Read More
+                                    </a> -->
+                                <a href="contact.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 30px"
+                                    data-i18n-html="course.join"
+                                    >
+                                    Join Now
+                                </a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
+                            <!-- <h3 class="mb-0">$59.99</h3> -->
+                            <!-- <div class="mb-3">
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                                <small>(13)</small>
+                            </div> -->
+                            <h5 class="mb-4">
+                                Robotics & Robo <br>
+                                Kids | Junior | Master
+                            </h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-user-tie text-primary me-2"></i>
+                                Noraliyev Fazliddin
+                            </small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-clock text-primary me-2"></i>
+                                2/12/8 <span data-i18n-html="course.month">Month</span>
+                            </small>
+                            <!-- <small class="flex-fill text-center py-2">
+                                <i class="fa fa-user text-primary me-2"></i>
+                                30 Students
+                            </small> -->
                         </div>
                     </div>
                 </div>
+                <!-- Robotics - End -->
+                <!-- CAD & 3D - Start -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid" src="img/course-3.jpg" alt="" />
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    <!-- <a href="courses.html"
+                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px"
+                                        data-i18n-html="course.read"
+                                        >
+                                        Read More
+                                    </a> -->
+                                <a href="contact.html"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 30px"
+                                    data-i18n-html="course.join"
+                                    >
+                                    Join Now
+                                </a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
+                            <!-- <h3 class="mb-0">$65.95</h3> -->
+                            <!-- <div class="mb-3">
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                                <small>(23)</small>
+                            </div> -->
+                            <h5 class="mb-4">
+                                CAD & 3D <br>
+                                Modeling | Printing | Scanning
+                            </h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-user-tie text-primary me-2"></i>
+                                Aliyev Xusniddin
+                            </small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-clock text-primary me-2"></i>
+                                12 <span data-i18n-html="course.month">Month</span>
+                            </small>
+                            <!-- <small class="flex-fill text-center py-2">
+                                <i class="fa fa-user text-primary me-2"></i>
+                                30 Students
+                            </small> -->
                         </div>
                     </div>
                 </div>
+                <!-- CAD & 3D - End -->
             </div>
         </div>
     </div>
     <!-- Courses End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
         
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-white mb-3" data-i18n="footer.links_title">Quick Link</h4>
+                    <a class="btn btn-link" href="" data-i18n="footer.about">About Us</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.contact">Contact Us</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.terms">Terms & Condition</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.faq">FAQs & Help</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        <a href="https://maps.app.goo.gl/v7EX5twDbPtHQXobA">
+                            <span data-i18n="contact.address" data-i18n-html="footer.address">
+                                Mashrab Street, Andijan, Uzbekistan
+                            </span>
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        <a href="tel:+998552021101">+998 55 202 11 01</a> | <a href="tel:+998773941010">+998 77 394 10 10</a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://t.me/ibos_academy">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ibos_academy_official?igsh=dTJmc284bjdrMGt4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email" />
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            SignUp
+                        </button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        &copy; <a class="border-bottom" href="#">iboz.uz</a>,
+                        <span data-i18n="footer.copy">All Right Reserved.</span>
+                        <br /><br />
+                        <span data-i18n-html="footer.designed">Designed By</span>
+                        <a class="border-bottom" href="">Oybek</a> | 
+                        <span data-i18n-html="footer.distributed">Powered By</span>
+                        <a class="border-bottom" href="">iBOS Academy</a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
+                    <!-- <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Home</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
                             <a href="">FQAs</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

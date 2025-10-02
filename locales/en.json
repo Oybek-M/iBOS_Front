@@ -40,6 +40,7 @@
   "about": {
     "subtitle": "About Us",
     "title": "Welcome to iBOS",
+    "path": "Home / Pages / About",
     "text1": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.",
     "text2": "Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.",
     "points": [
@@ -70,6 +71,7 @@
   "course": {
     "read": "Read More",
     "join": "Join Now",
+    "month": "Month",
     "price": "$149.00",
     "title": "Web Design & Development Course for Beginners",
     "instructor": "John Doe",
@@ -80,7 +82,9 @@
   "team": {
     "subtitle": "Instructors",
     "title": "Expert Instructors",
-    "member1": { "name": "Instructor Name", "title": "Designation", "img": { "alt": "Instructor photo" } }
+    "member1": { "name": "Instructor Name", "title": "Designation", "img": { "alt": "Instructor photo" } },
+    "our_team": "Our Team",
+    "path": "Home / Pages / Our Team"
   },
   "testimonial": {
     "subtitle": "Testimonial",
@@ -101,9 +105,37 @@
     "news_placeholder": "Your email",
     "news_button": "SignUp",
     "copy": "All Right Reserved.",
-    "designed": "Designed By HTML Codex",
-    "distributed": "Distributed By ThemeWagon",
+    "designed": "Designed By",
+    "distributed": "Powered By",
     "menu": { "home": "Home", "cookies": "Cookies", "help": "Help", "faq": "FQAs" },
     "address": "Mashrab Street, Andijan, Uzbekistan"
+  },
+  "contact_us": {
+    "contact_title": "Contact",
+    "contact_subtitle": "Home / Pages / Contact",
+    "contact_main_title": "Contact For Any Query",
+    "contact_main_subtitle": "Contact Us",
+    "office": "Office",
+    "mobile": "Mobile",
+    "email": "Email",
+    "name_placeholder": "Your Name",
+    "mobile_placeholder": "Your Mobile Number",
+    "subject_placeholder": "Subject",
+    "message_placeholder": "Message",
+    "sendMessage_button": "Send Message",
+    "sending": "Sending..."
+  },
+  "about_page": {
+    "title": "Welcome to iBOS",
+    "subtitle": "About Us – iBOS Academy",
+    "extension": "“Infinity Brain: Opportunities & Solutions”",
+    "text1": "At iBOS Academy, we believe the human mind has no limits. With the power of technology and innovation, we open doors to new opportunities and smart solutions that shape the future.",
+    "text2": "Located in the heart of Andijon, iBOS Academy is more than just an IT education center — it’s a hub of innovation, research, and creativity. Our mission is to empower young minds and professionals with the skills they need to thrive in the ever-evolving world of IT, Artificial Intelligence, Robotics, Hardware Engineering, and 3D Modeling.",
+    "different_title": "What Makes Us Different",
+    "point1": "🌟 Diverse Learning Paths: From Backend Development to AI Agents, Robototexnika, and Hardware Engineering, we provide practical, industry-ready skills.",
+    "point2": "🔬 R&D Laboratory: A space for innovation — where students bring ideas to life through projects like Smart Greenhouse, Smart Homes, IoT solutions, and even defense technology prototypes.",
+    "point3": "👩‍🏫 Hands-On Experience: Learning at iBOS isn’t limited to textbooks — students build real projects under expert mentorship.",
+    "point4": "🤝 Collaboration & Growth: Our Co-Working Zone and partnerships with private schools and tech communities create endless networking opportunities.",
+    "creative_title": "💡 Creative Touches for the Page:"
   }
 }

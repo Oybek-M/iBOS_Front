@@ -144,7 +144,7 @@
 
   // Fallback selectors (keeps compatibility if some elements lack data-i18n)
   const FALLBACK_SELECTORS = [
-    { sel: ".navbar .nav-link.active", key: "nav.home" },
+    { sel: ".navbar .nav-link", key: "nav.home" },
     { sel: ".navbar .nav-link[href='about.html']", key: "nav.about" },
     { sel: ".navbar .nav-link[href='courses.html']", key: "nav.courses" },
     { sel: ".nav-item.dropdown > .nav-link.dropdown-toggle", key: "nav.pages" },

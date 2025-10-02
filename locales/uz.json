@@ -40,6 +40,7 @@
   "about": {
     "subtitle": "Biz haqimizda",
     "title": "iBOS ga xush kelibsiz",
+    "path": "Bosh sahifa / Sahifalar / Biz haqimizda",
     "text1": "Biz haqimizda qisqacha ma'lumot.",
     "text2": "Qo‘shimcha ma'lumotlar va tavsiflar shu yerda.",
     "points": [
@@ -50,8 +51,7 @@
       "R&D laboratoriyasi",
       "Material ombori"
     ],
-    "button": "Batafsil",
-    "img": { "alt": "Biz haqimizda rasm" }
+    "button": "Batafsil"
   },
   "categories": {
     "subtitle": "Kategoriyalar",
@@ -71,6 +71,7 @@
   "course": {
     "read": "Batafsil",
     "join": "Qo‘shilish",
+    "month": "Oy",
     "price": "$149.00",
     "title": "Boshlovchilar uchun Veb Dizayn kursi",
     "instructor": "John Doe",
@@ -85,7 +86,9 @@
       "name": "O‘qituvchi",
       "title": "Lavozim",
       "img": { "alt": "O‘qituvchi rasmi" }
-    }
+    },
+    "our_team": "Bizning jamoa",
+    "path": "Bosh sahifa / Sahifalar / Bizning jamoa"
   },
   "testimonial": {
     "subtitle": "Sharhlar",
@@ -111,8 +114,8 @@
     "news_placeholder": "Sizning email",
     "news_button": "Obuna bo‘lish",
     "copy": "Barcha huquqlar himoyalangan.",
-    "designed": "Dizayn: HTML Codex",
-    "distributed": "Tarqatish: ThemeWagon",
+    "designed": "Ishlab chiquvchi",
+    "distributed": "Qo'llab-quvvatlovchi",
     "menu": {
       "home": "Bosh sahifa",
       "cookies": "Cookies",
@@ -120,5 +123,33 @@
       "faq": "FAQ"
     },
     "address": "Mashrab ko'chasi, Andijon, O'zbekiston"
+  },
+  "contact_us": {
+    "contact_title": "Aloqa",
+    "contact_subtitle": "Bosh sahifa / Sahifalar / Aloqa",
+    "contact_main_title": "Har qanday savol uchun bog'laning",
+    "contact_main_subtitle": "Biz bilan bog'laning",
+    "office": "Ofis",
+    "mobile": "Mobil",
+    "email": "Email",
+    "name_placeholder": "Ismingiz",
+    "mobile_placeholder": "Mobil raqamingiz",
+    "subject_placeholder": "Mavzu",
+    "message_placeholder": "Xabar",
+    "sendMessage_button": "Xabarni yuborish",
+    "sending": "Yuborilmoqda..."
+  },
+  "about_page": {
+    "title": "iBOS ga xush kelibsiz",
+    "subtitle": "Biz haqimizda – iBOS Academy",
+    "extension": "“Infinity Brain: Opportunities & Solutions”",
+    "text1": "iBOS Akademiyasida biz inson aqlining chegarasi yo'qligiga ishonamiz. Texnologiya va innovatsiyalar kuchi bilan biz kelajakni shakllantiradigan yangi imkoniyatlar va aqlli yechimlar uchun eshiklarni ochamiz.",
+    "text2": "Andijon shahrining qoq markazida joylashgan iBOS akademiyasi shunchaki IT-ta’lim markazi emas — bu innovatsiyalar, tadqiqot va ijodkorlik markazidir. Bizning vazifamiz yosh aql va mutaxassislarga doimiy rivojlanib borayotgan IT, sun’iy intellekt, robototexnika, apparat muhandisligi va 3D modellashtirish olamida rivojlanish uchun zarur bo‘lgan ko‘nikmalarga ega bo‘lishdir.",
+    "different_title": "Biz nima bilan farq qilamiz",
+    "point1": "🌟 Turli xil o'rganish yo'llari: Backend ishlab chiqishdan AI agentlari, Robototexnika va apparat muhandisligigacha biz amaliy, sanoat uchun tayyor ko'nikmalarni taqdim etamiz.",
+    "point2": "🔬 Ilmiy-tadqiqot laboratoriyasi: Innovatsiyalar maydoni — bu yerda talabalar aqlli issiqxona, aqlli uylar, IoT yechimlari va hatto mudofaa texnologiyalari prototiplari kabi loyihalar orqali g‘oyalarni hayotga tatbiq etadilar.",
+    "point3": "👩‍🏫 Amaliy tajriba: iBOS’da o‘rganish faqat darsliklar bilan cheklanmaydi — talabalar mutaxassislarning maslahati ostida haqiqiy loyihalarni yaratadilar.",
+    "point4": "🤝 Hamkorlik va oʻsish: Hamkorlik zonamiz va xususiy maktablar va texnologik hamjamiyatlar bilan hamkorlik cheksiz tarmoq imkoniyatlarini yaratadi."
+    
   }
 }

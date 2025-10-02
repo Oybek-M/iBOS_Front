@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
+    <title>iBOS Academy</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo_icon.png" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -33,38 +33,49 @@
 
 <body>
     <!-- Spinner Start -->
-    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div> -->
+    </div>
     <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" style="top: 0px;">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+            <img src="img/logo.png" alt="Logo" width="150" height="54" data-i18n-alt="logo.alt" />
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
+                <select id="lang-select" class="form-select form-select-sm w-auto ms-3" aria-label="Language select">
+                    <option value="uz">Oʻzbekcha</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+
+                <a href="index.html" class="nav-item nav-link" data-i18n-html="nav.home">Home</a>
+                <a href="about.html" class="nav-item nav-link" data-i18n-html="nav.about">About</a>
+                <a href="courses.html" class="nav-item nav-link " data-i18n-html="nav.courses">Courses</a>
+
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                </div> -->
+                <a href="team.html" class="nav-item nav-link" data-i18n-html="nav.team">Our Team</a>
+                <a href="contact.html" class="nav-item nav-link active" data-i18n-html="nav.contact">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+                Join Now
+                <i class="fa fa-arrow-right ms-3"></i>
+            </a> -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -75,12 +86,13 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Contact</h1>
+                    <h1 class="display-3 text-white animated slideInDown" data-i18n-html="contact_us.contact_title">Contact</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                             <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li> -->
+                            <li class="breadcrumb-item" ><a class="text-white" href="#" data-i18n-html="contact_us.contact_subtitle">Home / Pages / Contact</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -94,20 +106,18 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h1 class="mb-5">Contact For Any Query</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3" data-i18n-html="contact_us.contact_main_subtitle">Contact Us</h6>
+                <h1 class="mb-5" data-i18n-html="contact_us.contact_main_title">Contact For Any Query</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5>Get In Touch</h5>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h5 class="text-primary">Office</h5>
-                            <p class="mb-0">123 Street, New York, USA</p>
+                            <h5 class="text-primary" data-i18n-html="contact_us.office">Office</h5>
+                            <p class="mb-0" data-i18n-html="footer.address">123 Street, New York, USA</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
@@ -115,8 +125,8 @@
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h5 class="text-primary">Mobile</h5>
-                            <p class="mb-0">+012 345 67890</p>
+                            <h5 class="text-primary" data-i18n-html="contact_us.mobile">Mobile</h5>
+                            <p class="mb-0">+998 55 202 11 01 | +998 77 394 10 10</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -124,7 +134,7 @@
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
                         <div class="ms-3">
-                            <h5 class="text-primary">Email</h5>
+                            <h5 class="text-primary" data-i18n-html="contact_us.email">Email</h5>
                             <p class="mb-0">info@example.com</p>
                         </div>
                     </div>
@@ -136,34 +146,34 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form id="contact_form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" data-i18n-placeholder="contact_us.name_placeholder">
+                                    <label for="name" data-i18n-html="contact_us.name_placeholder">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Your Phone Number" data-i18n-placeholder="contact_us.mobile_placeholder">
+                                    <label for="email" data-i18n-html="contact_us.mobile_placeholder">Your Mobile Number</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" data-i18n-placeholder="contact_us.subject_placeholder">
+                                    <label for="subject" data-i18n-html="contact_us.subject_placeholder">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" data-i18n-placeholder="contact_us.message_placeholder"></textarea>
+                                    <label for="message" data-i18n-html="contact_us.message_placeholder">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" data-i18n-html="contact_us.sendMessage_button">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -178,77 +188,103 @@
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">FAQs & Help</a>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-white mb-3" data-i18n="footer.links_title">Quick Link</h4>
+                    <a class="btn btn-link" href="" data-i18n="footer.about">About Us</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.contact">Contact Us</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.terms">Terms & Condition</a>
+                    <a class="btn btn-link" href="" data-i18n="footer.faq">FAQs & Help</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>
+                        <a href="https://maps.app.goo.gl/v7EX5twDbPtHQXobA">
+                            <span data-i18n="contact.address" data-i18n-html="footer.address">
+                                Mashrab Street, Andijan, Uzbekistan
+                            </span>
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>
+                        <a href="tel:+998552021101">+998 55 202 11 01</a> | <a href="tel:+998773941010">+998 77 394 10 10</a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://t.me/ibos_academy">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ibos_academy_official?igsh=dTJmc284bjdrMGt4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="" />
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="" />
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="position-relative mx-auto" style="max-width: 400px">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email" />
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                            SignUp
+                        </button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        &copy; <a class="border-bottom" href="#">iboz.uz</a>,
+                        <span data-i18n="footer.copy">All Right Reserved.</span>
+                        <br /><br />
+                        <span data-i18n-html="footer.designed">Designed By</span>
+                        <a class="border-bottom" href="">Oybek</a> | 
+                        <span data-i18n-html="footer.distributed">Powered By</span>
+                        <a class="border-bottom" href="">iBOS Academy</a>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
+                    <!-- <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Home</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
                             <a href="">FQAs</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -273,6 +309,86 @@
 
     <!-- Finally load the new main.js (non-module) -->
     <script src="./js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const langSelect = document.getElementById('lang-select');
+            const form = document.getElementById('contactForm') || document.querySelector('#contact_form');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const GAS_URL = 'https://script.google.com/macros/s/AKfycbxi8Ix16zpS14kVGfBP7elur9luSg64c-RwiCZcGmTxP1Ij2F3dVCCDIlFKx3D81KLiKA/exec'; // sizning deployed URL
+
+            form.addEventListener('submit', async function(e){
+                e.preventDefault();
+                submitBtn.disabled = true;
+                // submitBtn.innerText = 'Sending...';
+                if (langSelect.value == "en") {
+                    submitBtn.innerText = 'Sending...';
+                } else if (langSelect.value == "uz") {
+                    submitBtn.innerText = 'Yuborilmoqda...';
+                } else if (langSelect.value == "ru") {
+                    submitBtn.innerText = 'Отправка...';
+                }
+
+                const name = (document.getElementById('name').value || '').trim();
+                const mobile = (document.getElementById('email').value || '').trim();
+                const subject = (document.getElementById('subject').value || '').trim();
+                const message = (document.getElementById('message').value || '').trim();
+
+                if (!name || !message) {
+                    alert('Please fill required fields');
+                    submitBtn.disabled = false;
+                    // submitBtn.innerText = 'Send Message';
+                    if (langSelect.value == "en") {
+                        submitBtn.innerText = 'Send Message';
+                    } else if (langSelect.value == "uz") {
+                        submitBtn.innerText = 'Xabarni yuborish';
+                    } else if (langSelect.value == "ru") {
+                        submitBtn.innerText = 'Отправить сообщение';
+                    }
+                    return;
+                }
+
+                // Build URL-encoded body (won't trigger preflight)
+                const params = new URLSearchParams();
+                params.append('name', name);
+                params.append('mobile', mobile);
+                params.append('subject', subject);
+                params.append('message', message);
+
+                try {
+                    const res = await fetch(GAS_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                        },
+                        body: params.toString()
+                    });
+
+                    const json = await res.json();
+                    if (json && json.ok) {
+                        alert('Message sent! Thank you.');
+                        form.reset();
+                    } else {
+                        alert('Server error: ' + (json && json.error ? json.error : 'Unknown error'));
+                    }
+                } catch (err) {
+                    console.error(err);
+                    alert('Network error: ' + err.message);
+                } finally {
+                    submitBtn.disabled = false;
+                    // submitBtn.innerText = 'Send Message';
+                    if (langSelect.value == "en") {
+                        submitBtn.innerText = 'Send Message';
+                    } else if (langSelect.value == "uz") {
+                        submitBtn.innerText = 'Xabarni yuborish';
+                    } else if (langSelect.value == "ru") {
+                        submitBtn.innerText = 'Отправить сообщение';
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
