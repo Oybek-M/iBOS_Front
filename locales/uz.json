@@ -26,16 +26,16 @@
   },
   "service": {
     "instructors": "Malakali o‘qituvchilar",
-    "instructors_desc": "Qisqacha ta'rif — sayt namunasi.",
+    "instructors_desc": "Bilimni ilhomga aylantiradigan va kelajakni yaratishga yo'l ko'rsatadigan ehtirosli mutaxassislardan o'rganing.",
 
     "online": "Onlayn darslar",
-    "online_desc": "Qisqacha ta'rif — sayt namunasi.",
+    "online_desc": "Moslashuvchan, interaktiv ta'lim - istalgan vaqtda, istalgan joyda.",
 
     "projects": "Uy vazifalari",
-    "projects_desc": "Qisqacha ta'rif — sayt namunasi.",
+    "projects_desc": "Uyingizdan turib real texnologik loyihalarni yarating va g‘oyalaringizni hayotga tatbiq eting.",
 
-    "library": "Coworking hududi",
-    "library_desc": "Qisqacha ta'rif — sayt namunasi."
+    "library": "Kovorking maydoni",
+    "library_desc": "Kelajakdagi ishlab chiqaruvchilar uchun mo'ljallangan jonli makonda hamkorlik qiling, yarating va innovatsiya qiling."
   },
   "about": {
     "subtitle": "Biz haqimizda",

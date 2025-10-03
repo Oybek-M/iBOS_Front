@@ -26,16 +26,16 @@
   },
   "service": {
     "instructors": "Skilled Instructors",
-    "instructors_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor.",
+    "instructors_desc": "Learn from passionate experts who turn knowledge into inspiration and guide you to create the future.",
 
     "online": "Online Classes",
-    "online_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor.",
+    "online_desc": "Flexible, interactive learning — anytime, anywhere.",
 
     "projects": "Home Projects",
-    "projects_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor.",
-    
+    "projects_desc": "Build real-world tech projects right from your home and bring your ideas to life.",
+
     "library": "Coworking Space",
-    "library_desc": "Diam elitr kasd sed at elitr sed ipsum justo dolor."
+    "library_desc": "Collaborate, create, and innovate in a vibrant space designed for future makers."
   },
   "about": {
     "subtitle": "About Us",

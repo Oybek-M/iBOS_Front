@@ -221,15 +221,12 @@
     const locales = await loadLocales();
     I18n.translations = locales;
 
+    // localStorage dan olish to'g'ri, agar yo'q bo'lsa DEFAULT = 'uz'
     const saved = localStorage.getItem("lang");
-    if (saved) I18n.locale = saved;
-    else {
-      const navLang = (
-        navigator.language ||
-        navigator.userLanguage ||
-        "uz"
-      ).split("-")[0];
-      if (Object.keys(LOCALES).includes(navLang)) I18n.locale = navLang;
+    if (saved) {
+      I18n.locale = saved;
+    } else {
+      I18n.locale = "uz"; // default o'zbekcha
     }
 
     const domReady = () => {
